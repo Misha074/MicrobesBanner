@@ -8,21 +8,24 @@
 // Global
 // ---------------------------------
 
-@import "variables";
-@import "mixins";
 @import "global/fonts";
 @import "global/reboot";
-@import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+// @import "blocks/banner";
+@import "blocks/banner4";
+@import "blocks/start-banner";
+@import "blocks/rules-banner";
+@import "blocks/game-banner";
+@import "blocks/final-banner";
+@import "blocks/bacteria";
+@import "blocks/foam";
+@import "blocks/timer";
+@import "blocks/sprayer";
+@import "blocks/dirt-group";
 
 // ---------------------------------
 

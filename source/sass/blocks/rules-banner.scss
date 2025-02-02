@@ -1,0 +1,34 @@
+.rules-banner {
+  display: none;
+  opacity: 0;
+
+  background-color: #006822;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: #ffffff;
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  line-height: 1.05em;
+  padding: 5.5% 5.5% 4.5% 11%;
+  z-index: 2;
+
+  p {
+    margin: 0;
+    position: relative;
+  }
+
+  .rules-banner__triangle {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    border-width: 2.2rem;
+    margin-top: -2.2rem;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+  }
+}

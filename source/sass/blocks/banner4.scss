@@ -1,0 +1,39 @@
+.banner {
+  margin: auto;
+  @media (min-aspect-ratio: 16/9) {
+    width: 177.77vh;
+    height: 100vh;
+  }
+
+  @media (max-aspect-ratio: 16/9) and (min-aspect-ratio: 4/3) {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @media (max-aspect-ratio: 4/3) {
+    width: 100vw;
+    height: 75vw;
+  }
+}
+
+.banner__wrapper {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 30px;
+
+  @media (min-aspect-ratio: 16/9) {
+    width: 133.33vh; /* 100vh * 4 / 3 */
+    height: 100vh;
+  }
+
+  @media (max-aspect-ratio: 16/9) and (min-aspect-ratio: 4/3) {
+    width: 133.33vh; /* 100vh * 4 / 3 */
+    height: 100vh;
+  }
+
+  @media (max-aspect-ratio: 4/3) {
+    width: 100vw;
+    height: 75vw;/* 100vw * 3 / 4 */
+  }
+}

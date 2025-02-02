@@ -1,0 +1,82 @@
+.bacteria {
+  width: 25.7%;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+  opacity: 0;
+  scale: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.bacteria--1 {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+  scale: 1;
+}
+
+.bacteria--2 {
+  top: 40%;
+  left: 20%;
+}
+
+.bacteria--3 {
+  top: 0%;
+  left: 43%;
+}
+
+.bacteria--4 {
+  top: 16.5%;
+  left: 80.5%;
+  width: 19.7%;
+}
+
+.bacteria--5 {
+  top: 28%;
+  left: 103%;
+}
+
+.bacteria--6 {
+  width: 20.42%;
+  top: 9.6%;
+  left: 140%;
+}
+
+.bacteria--7 {
+  top: 60%;
+  left: 160%;
+}
+
+.bacteria--start-1 {
+  top: 50%;
+  right: 5%;
+  width: 25%;
+  transform: rotateZ(25deg);
+
+  opacity: 0;
+  scale: 0;
+}
+
+.bacteria--start-2 {
+  top: 30%;
+  right: 20%;
+  width: 25%;
+  transform: rotateZ(10deg);
+
+  opacity: 0;
+  scale: 0;
+}
+
+.bacteria--start-3 {
+  top: 15%;
+  right: -2%;
+  transform: rotateZ(-25deg);
+
+  opacity: 0;
+  scale: 0;
+}
+

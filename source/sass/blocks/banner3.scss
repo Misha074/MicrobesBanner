@@ -1,0 +1,290 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  @media (min-aspect-ratio: 16/9) {
+    width: 177.77vh; /* 100vh * 16 / 9 */
+    height: 100vh;
+  }
+
+  @media (max-aspect-ratio: 16/9) and (min-aspect-ratio: 4/3) {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @media (max-aspect-ratio: 4/3) {
+    width: 100vw;
+    height: 75vw; /* 100vw * 3 / 4 */
+  }
+}
+
+.banner__wrapper {
+  position: relative;
+  overflow: hidden;
+
+
+  @media (min-aspect-ratio: 16/9) {
+    width: 133.33vh; /* 100vh * 4 / 3 */
+    height: 100vh;
+  }
+
+  @media (max-aspect-ratio: 16/9) and (min-aspect-ratio: 4/3) {
+    width: 133.33vh; /* 100vh * 4 / 3 */
+    height: 100vh;
+  }
+
+  @media (max-aspect-ratio: 4/3) {
+    width: 100vw;
+    height: 75vw; /* 100vw * 3 / 4 */
+  }
+
+
+}
+
+.banner__background-wrapper {
+  height: 100%;
+
+  img {
+    height: 100%;
+    height: 100%;
+    max-width: unset;
+  }
+}
+
+// пятна грязи
+
+.dirt-group {
+  position: absolute;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.dirt-group--1 {
+  left: 0.4vw;
+  top: 7vw;
+  width: 29.6vw;
+}
+
+.dirt-group--2 {
+  left: 30.4vw;
+  top: 29vw;
+  width: 10.08vw;
+  mix-blend-mode: normal;
+}
+
+.dirt-group--3 {
+  left: 31.7vw;
+  top: 14vw;
+  width: 32.89vw;
+}
+
+.dirt-group--4 {
+  left: 42.1vw;
+  top: -0.1vw;
+  width: 46.71vw;
+}
+
+.dirt-group--5 {
+  left: 88vw;
+  top: 15vw;
+  width: 11.79vw;
+}
+
+.dirt-group--6 {
+  left: 103.2vw;
+  top: 0.8vw;
+  width: 15.23vw;
+}
+
+.dirt-group--7 {
+  left: 130vw;
+  top: 5.7vw;
+  width: 6.05vw;
+}
+
+
+.bacteria {
+  width: 21.87vw;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+
+  img {
+    width: 100%;
+  }
+}
+
+.foam {
+  position: absolute;
+  z-index: 3;
+  scale: 0;
+}
+
+.bacteria--1 {
+  top: 16vw;
+  left: 0;
+}
+
+.foam--1 {
+  top: 3vw;
+  left: 0vw;
+  width: 31.76vw;
+  opacity: 0;
+}
+
+.foam--2 {
+  top: 20vw;
+  left: 26vw;
+  width: 23.48vw;
+}
+
+.foam--3 {
+  top: 0vw;
+  left: 32vw;
+  width: 27.34vw;
+}
+
+.foam--4 {
+  top: -9vw;
+  left: 42vw;
+  width: 41.88vw;
+}
+
+.foam--5 {
+  top: 6vw;
+  left: 85vw;
+  width: 16.76vw;
+}
+
+.foam--6 {
+  top: 3vw;
+  left: 103vw;
+  width: 21.76vw;
+}
+
+.foam--7 {
+  top: 7.5vw;
+  left: 126.5vw;
+  width: 19.34vw;
+}
+
+.bacteria--2 {
+  top: 23vw;
+  left: 16vw;
+  opacity: 0;
+  display: none;
+}
+
+.bacteria--3 {
+  top: -2vw;
+  left: 30vw;
+  opacity: 0;
+  display: none;
+}
+
+.bacteria--4 {
+  top: 9.6vw;
+  left: 60.5vw;
+  width: 14.76vw;
+  display: none;
+}
+
+.bacteria--5 {
+  top: 15vw;
+  left: 76vw;
+  scale: 0;
+  opacity: 0;
+}
+
+.bacteria--6 {
+  width: 15.31vw;
+  opacity: 0;
+  scale: 0;
+  top: 5.6vw;
+  left: 106vw;
+}
+
+.bacteria--7 {
+  opacity: 0;
+  scale: 0;
+  top: 30vw;
+  left: 119vw;
+}
+
+.rules-banner {
+  background-color: #006822;
+  border-radius: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 4.07vw;
+  width: 65.46vw;
+  position: absolute;
+  top: 19vw;
+  right: 0;
+  line-height: 1.05em;
+  padding: 5.55vw 5.55vw 4.63vw 11.46vw;
+  transform: translate(-11.94%, 0);
+
+  p {
+    margin: 0;
+    position: relative;
+  }
+
+  .rules-banner__triangle {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    margin-top: -4.26vw;
+    border-width: 4.26vw;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+  }
+}
+
+.sprayer {
+  position: absolute;
+  right: 1vw;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0;
+
+  img {
+    width: 10.66vw;
+  }
+}
+
+.timer {
+  position: absolute;
+  bottom: 1vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92.55vw;
+  height: 1.4vw;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  border-radius: 90px;
+  opacity: 0;
+}
+
+.timer__timerline {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+
+  background-color: rgba(0, 104, 34, 0.8);
+  border-radius: 30px;
+}
+
+.banner--0 {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: calc(100vw / 16) * 9;
+  top: 0;
+  left: 0;
+}

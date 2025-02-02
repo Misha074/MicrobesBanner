@@ -1,0 +1,24 @@
+.timer {
+  position: absolute;
+  overflow: hidden;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94.26%;
+  height: 4.5%;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  border-radius: 90px;
+  opacity: 0;
+}
+
+.timer__timerline {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+
+  background-color: rgba(0, 104, 34, 0.8);
+  border-radius: 30px;
+  opacity: 1;
+}
